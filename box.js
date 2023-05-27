@@ -19,7 +19,7 @@ class Box {
     translate(pos.x, pos.y);
     rotate(angle);
     imageMode(CENTER);
-    image(this.images[this.currentImage], 0, 0, this.w + 120, this.h + 80);
+    image(this.images[this.currentImage], 0, 0, this.w + 60, this.h + 40);
     pop();
   }
 
@@ -27,9 +27,17 @@ class Box {
     const pos = this.body.position;
     if (pos.y > 0 && pos.y < heightThresholds) {
       if (pos.x < width / 2) {
-        this.currentImage = 8;
+        if (pos.y < heightThresholds / 2) {
+          this.currentImage = 8;
+        } else {
+          this.currentImage = 9;
+        }
       } else {
-        this.currentImage = 6;
+        if (pos.y < heightThresholds / 2) {
+          this.currentImage = 6;
+        } else {
+          this.currentImage = 7;
+        }
       }
     } else {
       if (pos.x < width / 2) {

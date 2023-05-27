@@ -9,6 +9,9 @@ const boxes5 = [];
 
 let world, engine;
 
+let boxwidth = 80;
+let boxheigt = 60;
+
 let boxImg1;
 let boxImg2;
 let boxImg3;
@@ -35,21 +38,21 @@ function setup() {
   ground = new Ground(0, height, width * 2, 200);
   console.log(height);
   console.log(windowHeight);
-  boundary_left = new Boundary(0, height / 2, 2, height, 0);
-  boundary_right = new Boundary(width, height / 2, 2, height, 0);
+  boundary_left = new Boundary(width, height / 2, 2, height, 0); // 가상왼쪽벽
+  boundary_right = new Boundary(width, height / 2, 2, height, 0); // 가상오른쪽벽
   hourglass_left = new Boundary(
     width / 4,
     height / 2,
     (width / 3) * 2,
-    20,
-    -PI / 3
+    5,
+    -PI / 2 - PI / 5
   );
   hourglass_right = new Boundary(
     (width / 4) * 3,
     height / 2,
     (width / 3) * 2,
-    20,
-    PI / 3
+    5,
+    -PI / 2 + PI / 5
   );
 
   const boxImages = [
@@ -65,19 +68,23 @@ function setup() {
     boxImg4_2,
   ];
 
-  for (let i = 0; i < 80; i++) {
-    const box = new Box(width / 2, 0.2 * i, 80, 60, boxImages);
+  boxwidth = 50;
+  boxheight = 37;
+
+  for (let i = 0; i < 200; i++) {
+    const box = new Box(width / 2, 0.2 * i, boxwidth, boxheight, boxImages);
     boxes1.push(box);
   }
 }
 
 function draw() {
-  background("white");
+  background("black");
   Matter.Engine.update(engine);
-  ground.show();
 
   for (let box of boxes1) {
     box.show();
     box.updateImage(400);
   }
+
+  function mouseClicked() {}
 }
