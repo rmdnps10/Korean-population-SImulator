@@ -9,7 +9,7 @@ class Box {
     this.h = h;
     this.images = images;
     this.currentImage = 0;
-    World.add(world, this.body);
+    Composite.add(world, this.body);
   }
 
   show() {

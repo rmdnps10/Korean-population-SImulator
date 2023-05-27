@@ -1,6 +1,5 @@
-const { Engine, World, Bodies, Mouse, MouseConstraint, Constraint } = Matter;
-
-let ground; // 바닥
+const { Engine, Composite, Bodies, Mouse, MouseConstraint, Constraint } =
+  Matter;
 const boxes1 = [];
 const boxes2 = [];
 const boxes3 = [];
@@ -8,10 +7,8 @@ const boxes4 = [];
 const boxes5 = [];
 
 let world, engine;
-
-let boxwidth = 80;
-let boxheigt = 60;
-
+const boxwidth = 40;
+const boxheight = 28;
 let boxImg1;
 let boxImg2;
 let boxImg3;
@@ -68,23 +65,25 @@ function setup() {
     boxImg4_2,
   ];
 
-  boxwidth = 50;
-  boxheight = 37;
-
-  for (let i = 0; i < 200; i++) {
+  for (let i = 0; i < 300; i++) {
     const box = new Box(width / 2, 0.2 * i, boxwidth, boxheight, boxImages);
     boxes1.push(box);
   }
 }
 
+function mouseClicked() {
+  console.log(12);
+  Composite.remove(world, hourglass_left);
+  console.log(Composite);
+  Composite.remove(world, hourglass_right);
+}
+
 function draw() {
-  background("black");
+  background("white");
   Matter.Engine.update(engine);
 
   for (let box of boxes1) {
     box.show();
     box.updateImage(400);
   }
-
-  function mouseClicked() {}
 }
