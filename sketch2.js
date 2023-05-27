@@ -35,10 +35,9 @@ function preload() {
 
 function setup() {
   const canvas = createCanvas(windowWidth, windowHeight);
-  canvas.parent("canvasContainer");
   engine = Engine.create();
   world = engine.world;
-  ground = new Ground(0, height, width * 2, 200);
+  ground = new Ground(0, height, width * 2, 100);
   console.log(height);
   console.log(windowHeight);
   boundary_left = new Boundary(width, height / 2, 2, height, 0); // 가상왼쪽벽
@@ -92,7 +91,4 @@ function draw() {
     box.show();
     box.updateImage(400);
   }
-  textSize(40);
-  fill("white");
-  text("Current year: 2060", (width / 3) * 2, 70);
 }

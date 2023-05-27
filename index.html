@@ -7,11 +7,39 @@
     <script src="./box.js"></script>
     <script src="./ground.js"></script>
     <script src="./boundary.js"></script>
+    <script src="sketch.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
   <body>
-    <script defer src="./sketch.js"></script>
-    <h1>Population simulator <button></button></h1>
+    <header>Korean population simulator</header>
+    <div class="selection">
+      Select year
+      <div id="1970" onclick="loadSketch('sketch.js')">1970</div>
+      <div id="1980" onclick="loadSketch('sketch2.js')">1980</div>
+      <div id="2000">2000</div>
+      <div id="2023">2023 <span class="today">today</span></div>
+      <div id="2040">2040</div>
+      <div id="2060">2060</div>
+      <div id="2080">2080</div>
+      <div id="2100">2100</div>
+    </div>
+    <div id="canvasContainer"></div>
+    <footer></footer>
+    <script>
+      let loadedScript = null;
+      function loadSketch(fileName) {
+        if (loadedScript) {
+          document.head.removeChild(loadedScript);
+        }
+        var script = document.createElement("script");
+        script.src = fileName;
+        script.onload = function () {
+          console.log(fileName + " 파일이 로드되었습니다.");
+        };
+        document.head.appendChild(script);
+        loadedScript = script;
+      }
+    </script>
   </body>
 </html>

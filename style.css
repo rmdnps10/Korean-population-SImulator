@@ -9,10 +9,24 @@ html,
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
+header {
+  padding: 30px;
   font-size: 50px;
   text-align: center;
   font-family: "font1";
+}
+
+.selection {
+  display: flex;
+  font-family: "font1";
+  font-size: 30px;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+span.today {
+  font-size: 20px;
 }
