@@ -36,6 +36,11 @@ header {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .selection div:hover {
   transform: scale(1.4);
 }
