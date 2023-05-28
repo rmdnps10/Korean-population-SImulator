@@ -35,14 +35,15 @@ function preload() {
 
 function setup() {
   const canvas = createCanvas(windowWidth, windowHeight);
-  canvas.parent("canvasContainer");
   engine = Engine.create();
   world = engine.world;
   ground = new Ground(0, height, width * 2, 200);
   console.log(height);
   console.log(windowHeight);
-  boundary_left = new Boundary(width, height / 2, 2, height, 0); // 가상왼쪽벽
+  boundary_left = new Boundary(0, height / 2, 2, height, 0); // 가상왼쪽벽
   boundary_right = new Boundary(width, height / 2, 2, height, 0); // 가상오른쪽벽
+  boundary_1 = new Boundary(width / 5, height / 3, width / 2, 1, -PI / 5);
+  boundary_2 = new Boundary((width / 5) * 4, height / 3, width / 2, 1, PI / 5);
   hourglass_left = new Boundary(
     width / 4,
     height / 2,
@@ -85,14 +86,11 @@ function mouseClicked() {
 }
 
 function draw() {
-  background("black");
+  background("white");
   Matter.Engine.update(engine);
 
   for (let box of boxes1) {
     box.show();
-    box.updateImage(400);
+    box.updateImage(350);
   }
-  textSize(40);
-  fill("white");
-  text("Current year: 2060", (width / 3) * 2, 70);
 }

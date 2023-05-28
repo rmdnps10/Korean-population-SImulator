@@ -12,6 +12,10 @@ body {
   box-sizing: border-box;
 }
 
+img {
+  border-radius: 10px;
+}
+
 header {
   padding: 30px;
   font-size: 50px;
@@ -20,6 +24,8 @@ header {
 }
 
 .selection {
+  border: 5px solid black;
+  border-radius: 12px;
   display: flex;
   font-family: "font1";
   font-size: 30px;
@@ -27,6 +33,10 @@ header {
   padding: 20px;
 }
 
-span.today {
-  font-size: 20px;
+.selection div:hover {
+  transform: scale(1.4);
+}
+
+#2060 {
+  font-size: 60px;
 }

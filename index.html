@@ -12,19 +12,21 @@
   </head>
 
   <body>
-    <header>Korean population simulator</header>
+    <header>
+      <img src="./images/flag.jpeg" style="width: 100px" /> Korean population
+      simulator
+    </header>
     <div class="selection">
       Select year
       <div id="1970" onclick="loadSketch('sketch.js')">1970</div>
-      <div id="1980" onclick="loadSketch('sketch2.js')">1980</div>
+      <div id="1985">1985</div>
       <div id="2000">2000</div>
-      <div id="2023">2023 <span class="today">today</span></div>
-      <div id="2040">2040</div>
+      <div id="2023">2023</div>
+      <div id="2035">2035</div>
+      <div id="2050">2050</div>
       <div id="2060">2060</div>
-      <div id="2080">2080</div>
-      <div id="2100">2100</div>
     </div>
-    <div id="canvasContainer"></div>
+    <script src="sketch.js"></script>
     <footer></footer>
     <script>
       let loadedScript = null;
