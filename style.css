@@ -32,11 +32,10 @@ header {
   justify-content: space-around;
   padding: 20px;
 }
+.selection div {
+  text-decoration: none;
+}
 
 .selection div:hover {
   transform: scale(1.4);
-}
-
-#2060 {
-  font-size: 60px;
 }
