@@ -42,21 +42,21 @@ function setup() {
   console.log(windowHeight);
   boundary_left = new Boundary(0, height / 2, 2, height, 0); // 가상왼쪽벽
   boundary_right = new Boundary(width, height / 2, 2, height, 0); // 가상오른쪽벽
-  boundary_1 = new Boundary(width / 5, height / 3, width / 2, 1, -PI / 5);
-  boundary_2 = new Boundary((width / 5) * 4, height / 3, width / 2, 1, PI / 5);
+  boundary_1 = new Boundary(width / 5, height / 3, width / 2, 1, -PI / 4);
+  boundary_2 = new Boundary((width / 5) * 4, height / 3, width / 2, 1, PI / 4);
   hourglass_left = new Boundary(
     width / 4,
     height / 2,
     (width / 3) * 2,
     5,
-    -PI / 2 - PI / 5
+    -PI / 2 - PI / 7
   );
   hourglass_right = new Boundary(
     (width / 4) * 3,
     height / 2,
     (width / 3) * 2,
     5,
-    -PI / 2 + PI / 5
+    -PI / 2 + PI / 7
   );
 
   const boxImages = [
