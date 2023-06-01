@@ -42,21 +42,52 @@ function setup() {
   console.log(windowHeight);
   boundary_left = new Boundary(0, height / 2, 2, height, 0); // 가상왼쪽벽
   boundary_right = new Boundary(width, height / 2, 2, height, 0); // 가상오른쪽벽
-  boundary_1 = new Boundary(width / 5, height / 3, width / 2, 1, -PI / 4);
-  boundary_2 = new Boundary((width / 5) * 4, height / 3, width / 2, 1, PI / 4);
+
+  boundary_4 = new Boundary(
+    (width / 100) * 35,
+    (height / 100) * 80,
+    1,
+    height * 0.33,
+    0
+  );
+  boundary_5 = new Boundary(
+    (width / 100) * 65,
+    (height / 100) * 80,
+    1,
+    height * 0.36,
+    0
+  );
+
+  boundary_6 = new Boundary(
+    width * 0.2,
+    height * 0.31,
+    width / 5,
+    1,
+    (PI / 2) * 0.98
+  );
+  boundary_7 = new Boundary(
+    width * 0.8,
+    height * 0.31,
+    width / 5,
+    1,
+    (-PI / 2) * 0.98
+  );
+
+  boundary_8 = new Boundary(width * 0.26, height * 0.15, width / 5, 1, -PI / 6);
+
   hourglass_left = new Boundary(
-    width / 4,
-    height / 2,
-    (width / 3) * 2,
+    width * 0.24,
+    height * 0.41,
+    width / 3,
     5,
-    -PI / 2 - PI / 7
+    PI / 4
   );
   hourglass_right = new Boundary(
-    (width / 4) * 3,
-    height / 2,
-    (width / 3) * 2,
+    width * 0.76,
+    height * 0.41,
+    width / 3,
     5,
-    -PI / 2 + PI / 7
+    -PI / 4
   );
 
   const boxImages = [
@@ -72,7 +103,7 @@ function setup() {
     boxImg4_2,
   ];
 
-  for (let i = 0; i < 350; i++) {
+  for (let i = 0; i < 320; i++) {
     const box = new Box(width / 2, 0.2 * i, boxwidth, boxheight, boxImages);
     boxes1.push(box);
   }
@@ -87,10 +118,18 @@ function mouseClicked() {
 
 function draw() {
   background("white");
+  c1 = color(255, 255, 255);
+  c2 = color(0, 0, 0);
+  for (let y = 0; y < height; y++) {
+    n = map(y, 0, height, 0, 1);
+    let newc = lerpColor(c1, c2, n);
+    stroke(newc);
+    line(0, y, width, y);
+  }
   Matter.Engine.update(engine);
 
   for (let box of boxes1) {
     box.show();
-    box.updateImage(350);
+    if (frameCount < 500) box.updateImage((height / 789) * 320);
   }
 }
