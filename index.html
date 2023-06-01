@@ -2,12 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
-    <script src="./library/matter.min.js"></script>
-    <script src="./box.js"></script>
-    <script src="./ground.js"></script>
-    <script src="./boundary.js"></script>
-    <script src="sketch.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
@@ -37,31 +31,31 @@
       <div id="2060"><a href="https://rmdnps10.github.io/ICC/">2060</a></div>
     </div>
 
-    <div class="insight">
-      <span>2050년</span> 대한민국의 인구는 <span>4695만</span>명이고, 노년
-      부양비는 <span>78.6</span> 이다.
+    <div class="insight">Project Overview</div>
+    <div class="One-liner">One-liner</div>
+    <div class="discription2">
+      이번 프로젝트에서 저는 우리나라의 급속한 고령화에 따른 생산가능인구의
+      부양부담을 나타내기 위해
     </div>
-    <div class="discription">
-      ※ 노년 부양비 = 생산 가능인구(15~64세)100명에 대한 고령인구(65세 이상)의
-      수
+    <div class="discription2">
+      한국의 인구 피라미드 모델을 저만의 방식으로 시각화하여, 미래에 대한
+      경각심을 담아 중간중간에 특수한 이벤트를 추가하였습니다.
+    </div>
+    <div class="One-liner">Guide</div>
+    <div class="discription2">
+      - 홈페이지 배너를 눌러 연도에 따른 인구 모델의 모습을 보실 수 있습니다.
+    </div>
+    <div class="discription2">
+      - 처음 작품을 감상하실 때는 시간의 순서에 따라 보시면 감사드리겠습니다.
+    </div>
+    <div class="discription2">
+      - 화면을 꼭 전체화면으로 전환하여주셔야 합니다.
+    </div>
+    <div class="discription2">
+      - 이 프로젝트는 1440 x 788 크기의 화면에 최적화되어있어, 그 외의 화면의
+      경우 작품의 모습이 달라질 수 있습니다.
     </div>
 
-    <script src="sketch.js"></script>
     <footer></footer>
-    <script>
-      let loadedScript = null;
-      function loadSketch(fileName) {
-        if (loadedScript) {
-          document.head.removeChild(loadedScript);
-        }
-        var script = document.createElement("script");
-        script.src = fileName;
-        script.onload = function () {
-          console.log(fileName + " 파일이 로드되었습니다.");
-        };
-        document.head.appendChild(script);
-        loadedScript = script;
-      }
-    </script>
   </body>
 </html>

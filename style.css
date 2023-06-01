@@ -24,6 +24,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: "g";
   box-sizing: border-box;
 }
 
@@ -64,18 +65,19 @@ a {
 }
 
 .insight {
+  margin: 10px;
+  padding-right: 270px;
   text-align: center;
-  font-size: 20px;
-  margin-top: 10px;
-  font-family: "pre";
+  font-size: 70px;
 }
 
-.insight span {
+.One-liner {
+  padding-left: 30px;
   font-size: 30px;
+  padding-bottom: 40px;
 }
-
-.discription {
-  margin-top: 10px;
-  text-align: right;
-  margin-right: 30px;
+.discription2 {
+  font-size: 20px;
+  padding-bottom: 40px;
+  padding-left: 10px;
 }
