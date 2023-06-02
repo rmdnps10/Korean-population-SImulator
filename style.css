@@ -70,8 +70,6 @@ header {
 }
 
 .selection a {
-  border: 1px solid black;
-  border-radius: 10px;
   padding: 3px 12px;
   text-decoration: none;
   color: black;
