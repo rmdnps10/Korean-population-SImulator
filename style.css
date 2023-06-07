@@ -96,6 +96,18 @@ nav ul li a:hover::after {
   font-size: 40px;
 }
 
+.yellow_container {
+  width: 100%;
+  font-size: 100px;
+  background-color: #ffdf46;
+}
+
+.text_container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #ffdf46;
+}
 .dd {
   background-color: #ffdf46;
   color: black;
