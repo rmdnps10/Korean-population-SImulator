@@ -9,109 +9,178 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Intro to Creative computing</title>
   </head>
 
   <body>
-    <header><span>Kor</span><span>ean</span> population simulator</header>
-    <div></div>
-    <div class="selection">
-      Select year
-      <div id="1970">
-        <a href="https://rmdnps10.github.io/ICC1970/">1970</a>
-      </div>
-      <div id="1985">
-        <a href="https://rmdnps10.github.io/ICC1985/">1985</a>
-      </div>
-      <div id="2000">
-        <a href="https://rmdnps10.github.io/ICC2000/">2000</a>
-      </div>
-      <div id="2023">
-        <a href="https://rmdnps10.github.io/ICC2023/">2023 </a>
-      </div>
-      <div id="2035">
-        <a href="https://rmdnps10.github.io/ICC2035/">2035</a>
-      </div>
-      <div id="2050">
-        <a href="https://rmdnps10.github.io/ICC2050/">2050</a>
-      </div>
-      <div id="2060"><a href="https://rmdnps10.github.io/ICC/">2060</a></div>
+    <nav>
+      <ul>
+        <li>ICC Project</li>
+        <li><a href="https://rmdnps10.github.io/ICC1970/">1970</a></li>
+        <li><a href="https://rmdnps10.github.io/ICC1985/">1985</a></li>
+        <li><a href="https://rmdnps10.github.io/ICC2000/">2000</a></li>
+        <li><a href="https://rmdnps10.github.io/ICC2023/">2023</a></li>
+        <li><a href="https://rmdnps10.github.io/ICC2035/">2035</a></li>
+        <li><a href="https://rmdnps10.github.io/ICC2050/">2050</a></li>
+        <li><a href="https://rmdnps10.github.io/ICC/">2060</a></li>
+      </ul>
+    </nav>
+    <div class="main">
+      <div class="start"></div>
+      <div class="korea"><span>Korean</span></div>
+      <div class="Population"><span>Population</span></div>
+      <div class="Simulation"><span>Simulator.</span></div>
     </div>
-    <div class="contents">
-      <div class="introduction">Introduction</div>
-      <div class="discription22">
-        In this project, I visualized the Korean population pyramid model in my
-        own way
+
+    <div
+      class="dd"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-easing="linear"
+      class="aos-init aos-animate"
+    >
+      60년대 한강의 기적과 함께
+    </div>
+    <div
+      class="ee"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-easing="linear"
+      class="aos-init aos-animate"
+    >
+      기록적인 경제 성장을 일궈낸 대한민국.
+    </div>
+    <div
+      class="ee"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-easing="linear"
+      class="aos-init aos-animate"
+    >
+      하지만, 발전의 이면에서 인구 구조적 문제가 드리우게 되고.
+    </div>
+    <div class="ee" data-aos="fade-up">
+      오랜 시간동안 고령화는 우리나라의 꼬리표에 따라붙었습니다.
+    </div>
+    <div class="ee">지난 30년동안 누구나 인식하고 있는 문제이지만</div>
+    <div class="ee">그리 와닿지는 않는 문제.</div>
+    <div class="empty"></div>
+    <div class="ee">체감을 위해 지표를 하나 살펴볼까요?</div>
+    <div class="ee" style="font-size: 30px; color: grey">
+      "노년 부양비 = 생산가능인구(15~64세)100명당 노인(65세 이상)인구의 비"
+    </div>
+    <div class="ee">1970년 노년 부양비는 5</div>
+    <div class="ee">2000년 노년 부양비는 10.5</div>
+    <div class="ee">현재의 노년 부양비는 26.1</div>
+    <div class="ee">그렇다면 2060년의 노년 부양비는 얼마일까요?</div>
+    <div class="empty"></div>
+    <div class="ee"><span style="font-size: 180px">100.6</span>입니다.</div>
+    <div class="ee">
+      노년층의 인구가 청년층과 장년층을 포함한 인구를 역전하죠.
+    </div>
+    <div class="ee">아래 사진은 2060년의 인구피라미드입니다.</div>
+    <div class="ee">
+      <img
+        style="width: 100%; margin-top: 200px; margin-bottom: 200px"
+        src="./images/pyramid.png"
+        alt="pyramid"
+      />
+    </div>
+    <div class="ee">완전한 역피라미드 형태이죠?</div>
+    <div class="ee">역피라미드는 구조적으로 불안정합니다.</div>
+    <div class="ee">기반이 많은 양의 하중을 견뎌야 하기 때문이죠.</div>
+    <div class="ee">마찬가지로, 우리나라의 사회 근간이 되는</div>
+    <div class="ee">청장년층의 부양부담은 기하급수적으로 늘고 있습니다.</div>
+    <div class="empty"></div>
+    <div class="ee">이번 ICC 프로젝트에서 저는 가까운 미래에</div>
+    <div class="ee">청장년층이 겪을 부양부담을 나타내고자,</div>
+    <div class="ee">
+      대한민국의 인구 피라미드를 저의 방식으로 시각화하였습니다.
+    </div>
+    <div class="empty"></div>
+    <div class="emptyblue"></div>
+    <div class="bb">Project Overview</div>
+    <div class="container">
+      <div class="content1">
+        <h1>Guide</h1>
+        <p style="text-align: center; line-height: 200%; font-size: 18px">
+          내비게이션 바에 있는 연도를 클릭하여 각 시대의 인구 피라미드의 모습을
+          보실 수 있습니다. 인구 피라미드의 모습은 통계청의 연도별 인구 모델을
+          반영했습니다. <br />연도순대로 감상하시면, 더욱 작품이 와닿으실거에요.
+        </p>
       </div>
-      <div class="discription2">
-        to represent the burden on the working-age population due to the
-        country's rapid aging.
+      <div
+        class="content1"
+        style="
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-around;
+          flex-wrap: wrap;
+        "
+      >
+        <img
+          src="./images/chrome.svg"
+          alt=""
+          style="height: 40%; display: block; padding-left: 100px"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/e/e6/IMac_vector.svg"
+          alt=""
+          style="height: 40%; display: block; padding-right: 100px"
+        />
+        <p style="font-size: 20px">
+          Chrome Browser과 1440 x 788 screen에 최적화되어있습니다!
+        </p>
       </div>
-      <div class="discription2">
-        I visualized the Korean population pyramid model in my own way,
+      <div
+        class="content1"
+        style="background-image: url(./images/github-mark.png)"
+      >
+        <h1>Github</h1>
+        <p style="padding-left: 100px; line-height: 140%">
+          1970 Model : https://github.com/rmdnps10/ICC1970 <br />1985 Model :
+          https://github.com/rmdnps10/ICC1985 <br />2000 Model :
+          https://github.com/rmdnps10/ICC2000 <br />
+          2023 Model : https://github.com/rmdnps10/ICC2023 <br />
+          2035 Model : https://github.com/rmdnps10/ICC2035 <br />
+          2050 Model : https://github.com/rmdnps10/ICC2050 <br />
+          2070 Model : https://github.com/rmdnps10/ICC
+        </p>
       </div>
-      <div class="discription2">
-        adding special events along the way as a warning for the future.
-      </div>
-      <div class="One-liner">Guide</div>
-      <div class="discription2">
-        Tap the homepage banner to see what the population model looks like over
-        the years.
-      </div>
-      <div class="discription2">
-        When you first view the artwork, it's helpful to view it in
-        chronological order.
-      </div>
-      <div class="discription2">
-        Please switch to full screen and scale to 100%. (Optimized for Chrome
-        browser.)
-      </div>
-      <div class="discription2">
-        This project is optimized for 1440 x 788 screens, so it may look
-        different on other screens.
-      </div>
-      <div class="code">Code Explanation and Resources</div>
-      <div class="discription2">
-        1970 Model :
-        <a href="https://github.com/rmdnps10/ICC1970"
-          >https://github.com/rmdnps10/ICC1970</a
-        >
-      </div>
-      <div class="discription2">
-        1985 Model :
-        <a href="https://github.com/rmdnps10/ICC1985"
-          >https://github.com/rmdnps10/ICC1985</a
-        >
-      </div>
-      <div class="discription2">
-        2000 Model :
-        <a href="https://github.com/rmdnps10/ICC2000"
-          >https://github.com/rmdnps10/ICC2000</a
-        >
-      </div>
-      <div class="discription2">
-        2023 Model :
-        <a href="https://github.com/rmdnps10/ICC2023"
-          >https://github.com/rmdnps10/ICC2023</a
-        >
-      </div>
-      <div class="discription2">
-        2035 Model :
-        <a href="https://github.com/rmdnps10/ICC2035"
-          >https://github.com/rmdnps10/ICC2035</a
-        >
-      </div>
-      <div class="discription2">
-        2050 Model :
-        <a href="https://github.com/rmdnps10/ICC2050"
-          >https://github.com/rmdnps10/ICC2050</a
-        >
-      </div>
-      <div class="discription2">
-        2070 Model :
-        <a href="https://github.com/rmdnps10/ICC">
-          https://github.com/rmdnps10/ICC
-        </a>
+      <div class="content1" style="text-align: center; line-height: 400%">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+          style="height: 50%"
+          alt=""
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+          alt=""
+          style="height: 50%"
+        />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Javascript_badge.svg"
+          alt=""
+          style="height: 50%"
+        />
+        <br />
+        <img src="./images/p5js.png" alt="" style="height: 30%" />
+        <img
+          src="https://camo.githubusercontent.com/77e2685e9b84be282f193a05c6571760200f8adfaf92892490ade52a596f2a7c/68747470733a2f2f62726d2e696f2f6d61747465722d6a732f696d672f6d61747465722d6a732e737667"
+          alt=""
+          style="height: 20%"
+        />
       </div>
     </div>
+    <footer>
+      Copyright © 2023 20201148 Sogang Art&Technology Chung-In-Young. All rights
+      reserved.
+    </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

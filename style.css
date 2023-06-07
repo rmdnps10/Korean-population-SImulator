@@ -1,134 +1,158 @@
 @font-face {
-  font-family: "font1";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2")
+  font-family: "py";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2")
     format("woff2");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "pre";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "g";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-    format("woff");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "dd";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2")
-    format("woff2");
-  font-weight: 100;
-  font-style: normal;
-}
-
-html,
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Merriweather", serif;
-  font-weight: 100;
+  background-color: black;
+  color: white;
   box-sizing: border-box;
-
-  z-index: 2;
-  opacity: 1;
-  color: white;
 }
 
-img {
-  border-radius: 10px;
+nav {
+  background-color: rgba(0, 0, 0, 0.17);
+  margin: 0 auto;
+  position: fixed;
+  z-index: 999;
+  backdrop-filter: blur(1.8px);
 }
 
-header {
-  padding: 20px;
-  font-size: 30px;
+nav ul {
   text-align: center;
-  font-family: "g";
-  font-weight: 100;
+  display: flex;
+  padding-right: 200px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+nav ul li:first-child {
+  margin-left: 50px;
+  margin-right: 450px;
+  font-size: 20px;
+  font-family: "py";
+}
+
+nav ul li a {
+  padding: 5px;
+  text-transform: uppercase;
   color: white;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+.start {
+  height: 200px;
   background-color: black;
 }
 
-.selection {
-  display: flex;
-  font-family: "g";
-  font-size: 14px;
-  justify-content: space-around;
-  padding: 10px;
-  background: linear-gradient(to right, white, gray);
-  color: black;
+.main {
+  width: 100%;
+  font-size: 160px;
 }
-.selection div {
-  text-decoration: none;
+.empty {
+  height: 200px;
+  background-color: #ffdf46;
 }
-
-.selection a {
-  padding: 3px 12px;
-  text-decoration: none;
-  color: black;
+.korea span {
+  padding-left: 40px;
 }
 
-.selection div:hover {
-  transform: scale(1.4);
+.Population span {
+  padding-left: 300px;
+}
+
+.Simulation {
+  margin-bottom: 300px;
+}
+.Simulation span {
+  padding-left: 600px;
 }
 
 .contents {
-  background-image: url("images/background.jpg");
-  background-size: cover;
-  z-index: 123213;
-}
-
-.One-liner {
-  background-color: black;
-  font-size: 50px;
-  padding: 20px 0px;
-  padding-left: 140px;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  opacity: 0.7;
-}
-
-.introduction {
-  background-color: black;
-  font-size: 50px;
-  margin-bottom: 40px;
-  padding-top: 40px;
-  padding: 20px 0px;
-  padding-left: 140px;
-  opacity: 0.7;
-}
-.discription22 {
-  font-size: 20px;
-  padding-bottom: 20px;
-  padding-left: 90px;
-  background-color: black;
-  opacity: 0.7;
-}
-.discription2 {
-  font-size: 20px;
-  padding-bottom: 20px;
-  padding-left: 70px;
-  background-color: black;
-  opacity: 0.7;
-}
-
-.code {
-  background-color: black;
+  padding-top: 300px;
+  text-align: center;
   font-size: 40px;
-  padding: 20px 0px;
-  padding-left: 120px;
-  margin-bottom: 30px;
-  opacity: 0.7;
-  margin-top: 20px;
 }
 
-a {
+.dd {
+  background-color: #ffdf46;
+  color: black;
+  padding-top: 250px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.ee {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 50px;
+  background-color: #ffdf46;
+  color: black;
+}
+.emptyblue {
+  height: 100px;
+  background-color: black;
+}
+
+.bb {
+  width: 100%;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 100px;
   color: white;
+  background-color: black;
+  font-family: "py";
+}
+
+.container {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: var(--color-gray-5);
+  height: 800px;
+}
+
+.content1 {
+  padding: 40px;
+  width: 40%;
+  height: 250px;
+  background-color: #111;
+}
+.content1:hover {
+  background-color: #343a40;
+}
+.content1 h1 {
+  text-align: center;
+  font-size: 90px;
+  margin: 0px;
+  margin-bottom: 12px;
+}
+
+footer {
+  text-align: center;
+  color: gray;
+  font-size: 12px;
 }
