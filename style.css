@@ -113,13 +113,13 @@ nav ul li a:hover::after {
   color: black;
   padding-top: 250px;
   text-align: center;
-  font-size: 50px;
+  font-size: 38px;
 }
 
 .ee {
   padding-top: 30px;
   text-align: center;
-  font-size: 50px;
+  font-size: 38px;
   background-color: #ffdf46;
   color: black;
 }
@@ -161,6 +161,101 @@ nav ul li a:hover::after {
   font-size: 90px;
   margin: 0px;
   margin-bottom: 12px;
+}
+
+.development {
+  margin-top: 200px;
+  width: 100%;
+  height: 2000px;
+}
+
+.image-container {
+  background-image: url("https://wantedcon.co.kr/imgs/place_web.svg");
+  width: 100%;
+  height: 1900px;
+}
+
+.cc {
+  width: 100%;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  font-family: "py";
+}
+.kvcontainer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text_key {
+  font-size: 50px;
+  font-family: "py";
+  width: 40%;
+  height: 400px;
+  text-align: center;
+}
+
+.img-kv {
+  width: 30%;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100px;
+  width: 50%;
+}
+
+.image-grid img {
+  width: 100%;
+}
+
+.text_key2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "py";
+}
+
+.code-container {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.code1 {
+  width: 30%;
+  background-image: url("images/bondaryjs.png");
+  background-size: ;
+}
+
+.code2 {
+  width: 30%;
+  background-image: url("images/sketchjs.png");
+}
+.code3 {
+  width: 30%;
+  background-image: url("images/boxjs.png");
+}
+
+.texts {
+  padding-top: 45px;
+}
+.texts div {
+  padding-top: 12px;
+  padding-left: 50px;
+  font-size: 30px;
+  line-height: 200%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 footer {
